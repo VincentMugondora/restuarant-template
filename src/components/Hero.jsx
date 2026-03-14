@@ -1,8 +1,27 @@
+import { useState } from "react";
 import { ArrowRight, ArrowLeft } from "lucide-react";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./Navbar";
 
 export default function Hero() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Define our slides (assuming placeholders for other images)
+  const slides = [
+    { id: 1, src: "/burger-her.png", alt: "Classic Burger" },
+    { id: 2, src: "/cheese_burger.png", alt: "Cheese Burger" },
+    { id: 3, src: "/double_burger.png", alt: "Double Burger" },
+    { id: 4, src: "/veggie_burger.png", alt: "Veggie Burger" },
+  ];
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % slides.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
     <div className="relative h-[96vh] min-h-[600px] w-full bg-[#161616] text-white overflow-hidden flex flex-col">
 
@@ -48,42 +67,55 @@ export default function Hero() {
           </motion.div>
 
           {/* RIGHT: Burger Image - Scaled based on height (vh) */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="relative flex justify-center lg:justify-end"
-          >
+          <div className="relative flex justify-center lg:justify-end">
             {/* The size here is tied to vh to prevent overflow */}
             <div className="relative w-[280px] h-[280px] md:w-[40vh] md:h-[40vh] lg:w-[65vh] lg:h-[65vh] max-w-[550px] max-h-[550px]">
               <div
-                className="w-full h-full overflow-visible drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-transparent"
+                className="w-full h-full overflow-visible drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-transparent relative"
               >
-                <img
-                  src="/burger-her.png"
-                  alt="Burger"
-                  className="w-full h-full object-cover"
-                />
+                <AnimatePresence mode="popLayout">
+                  <motion.img
+                    key={currentIndex}
+                    src={slides[currentIndex].src}
+                    alt={slides[currentIndex].alt}
+                    className="w-full h-full object-cover absolute inset-0"
+                    initial={{ opacity: 0, scale: 0.8, rotate: 15, x: 100 }}
+                    animate={{ opacity: 1, scale: 1, rotate: 0, x: 0 }}
+                    exit={{ opacity: 0, scale: 0.8, rotate: -15, x: -100 }}
+                    transition={{ type: "spring", stiffness: 200, damping: 20 }}
+                  />
+                </AnimatePresence>
               </div>
             </div>
-          </motion.div>
+          </div>
         </div>
       </main>
 
       {/* FOOTER CONTROLS - Positioned at bottom of viewport */}
       <div className="relative z-20 px-6 md:px-16 lg:px-24 pb-8 flex items-center justify-between lg:justify-start lg:gap-12 shrink-0">
 
-        <div className="flex items-center gap-3 text-lg font-bold font-serif">
-          <span className="text-brand-yellow">01</span>
+        <div className="flex items-center gap-3 text-lg font-bold font-serif w-32">
+          <AnimatePresence mode="wait">
+             <motion.span 
+               key={currentIndex}
+               initial={{ y: 10, opacity: 0 }}
+               animate={{ y: 0, opacity: 1 }}
+               exit={{ y: -10, opacity: 0 }}
+               transition={{ duration: 0.2 }}
+               className="text-brand-yellow inline-block"
+             >
+               0{currentIndex + 1}
+             </motion.span>
+          </AnimatePresence>
           <div className="w-12 md:w-20 h-[1px] bg-gray-800" />
-          <span className="text-gray-600 font-medium text-sm">04</span>
+          <span className="text-gray-600 font-medium text-sm">0{slides.length}</span>
         </div>
 
         <div className="flex gap-3">
-          <button className="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center text-black hover:scale-105 transition-transform">
+          <button onClick={handlePrev} className="w-10 h-10 rounded-full bg-brand-yellow flex items-center justify-center text-black hover:scale-105 transition-transform active:scale-95">
             <ArrowLeft size={18} />
           </button>
-          <button className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-white hover:border-brand-yellow transition-all">
+          <button onClick={handleNext} className="w-10 h-10 rounded-full border border-gray-800 flex items-center justify-center text-white hover:border-brand-yellow hover:text-brand-yellow transition-all active:scale-95">
             <ArrowRight size={18} />
           </button>
         </div>

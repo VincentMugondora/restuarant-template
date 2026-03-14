@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
-    <div className="min-h-screen bg-brand-dark bg-[url('/doodle_pattern.svg')] bg-[length:400px_400px] bg-repeat text-white relative overflow-hidden flex flex-col pt-4">
+    <div className="min-h-screen lg:min-h-0 lg:h-[95vh] bg-brand-dark bg-[url('/doodle_pattern.svg')] bg-[length:400px_400px] bg-repeat text-white relative overflow-hidden flex flex-col pt-4">
       {/* Background organic shape on the right */}
       <div className="absolute top-0 right-0 w-[60%] h-full bg-[#1c1c1c] rounded-l-full translate-x-[20%] z-0 hidden lg:block" />
 
@@ -59,12 +59,12 @@ export default function Hero() {
           className="relative flex justify-center lg:justify-end items-center mb-10 lg:mb-0"
         >
           {/* Organic blob mask for the burger image */}
-          <div className="relative w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] lg:w-[600px] lg:h-[600px] shrink-0">
+          <div className="relative w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] lg:w-[480px] lg:h-[480px] xl:w-[550px] xl:h-[550px] shrink-0">
             <div className="absolute inset-0 overflow-hidden rounded-[40%_60%_70%_30%/40%_50%_60%_50%] shadow-2xl bg-brand-surface place-content-center flex">
                <img 
                  src="/burger_hero.png" 
                  alt="A delicious hamburger" 
-                 className="object-cover w-full h-full lg:scale-110"
+                 className="object-cover w-full h-full lg:scale-105"
                />
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Hero() {
       </main>
 
       {/* Pagination Controls absolute positioned */}
-      <div className="absolute bottom-8 left-6 md:left-12 flex items-center gap-4 text-white z-20 hidden md:flex">
+      <div className="absolute bottom-6 left-6 md:left-12 flex items-center gap-4 text-white z-20 hidden md:flex">
         <span className="font-bold">01</span>
         <div className="w-12 h-[2px] bg-gray-600" />
         <span className="text-gray-500 font-bold">04</span>

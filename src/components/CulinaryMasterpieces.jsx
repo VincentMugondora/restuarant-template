@@ -36,8 +36,8 @@ export default function CulinaryMasterpieces() {
         {masterpieces.map((item, index) => (
           <div key={index} className="flex flex-col group cursor-pointer">
             {/* Image Box */}
-            <div className="aspect-square bg-white rounded-lg p-6 flex items-center justify-center shadow-sm border border-gray-50 mb-6 group-hover:shadow-md transition-all duration-300 group-hover:-translate-y-2">
-              <img src={item.image} alt={item.name} className="w-full h-full object-contain" onError={(e) => {
+            <div className="aspect-square flex items-center justify-center p-2 mb-6 group-hover:-translate-y-2 transition-transform duration-300">
+              <img src={item.image} alt={item.name} className="w-full h-full object-contain mix-blend-multiply contrast-125 drop-shadow-lg" onError={(e) => {
                  // Fallback if image doesn't exist
                  e.target.src = "/cheese_burger.png"; 
               }}/>

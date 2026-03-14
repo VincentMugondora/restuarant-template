@@ -32,12 +32,12 @@ export default function BestSelling() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
           {products.map((item, index) => (
             <div key={index} className="group cursor-pointer transition-transform duration-300 hover:-translate-y-2">
-              {/* Image Container (Square) */}
-              <div className="aspect-square bg-white rounded-lg flex items-center justify-center p-6 shadow-sm border border-gray-50 group-hover:shadow-md transition-shadow">
+              {/* Image Container */}
+              <div className="aspect-square flex items-center justify-center p-6 transition-transform">
                 <img 
                   src={item.image} 
                   alt={item.name} 
-                  className="w-full h-full object-contain"
+                  className="w-full h-full object-contain mix-blend-multiply contrast-125 drop-shadow-lg group-hover:scale-110 transition-transform duration-300"
                 />
               </div>
 

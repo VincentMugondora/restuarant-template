@@ -14,7 +14,7 @@ export default function FeaturedSection() {
             <img 
               src="/double_burger.png" 
               alt="Featured Burger" 
-              className="w-full h-full object-cover rounded-xl shadow-2xl bg-brand-surface"
+              className="w-full h-full object-contain mix-blend-multiply contrast-125 saturate-150 drop-shadow-2xl"
             />
             
             {/* Overlapping Smaller Image */}
@@ -23,12 +23,12 @@ export default function FeaturedSection() {
               whileInView={{ x: 0, y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 0.8 }}
-              className="absolute -right-6 -bottom-6 md:-right-12 md:-bottom-12 w-[180px] h-[180px] md:w-[260px] md:h-[260px] border-[8px] md:border-[10px] border-[#fdfaf0] rounded-lg shadow-xl overflow-hidden bg-brand-surface"
+              className="absolute -right-6 -bottom-6 md:-right-12 md:-bottom-12 w-[180px] h-[180px] md:w-[260px] md:h-[260px] drop-shadow-xl"
             >
               <img 
                 src="/cheese_burger.png" 
                 alt="Featured Sides" 
-                className="w-full h-full object-cover scale-110"
+                className="w-full h-full object-contain scale-110 mix-blend-multiply contrast-125 saturate-150"
               />
             </motion.div>
           </div>

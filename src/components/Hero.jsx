@@ -18,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="flex flex-col gap-6 pt-10 pb-16 lg:py-0 text-center lg:text-left items-center lg:items-start"
         >
-          <h1 className="text-5xl md:text-7xl lg:text-[80px] leading-[1.1] font-serif font-bold tracking-tight [text-shadow:0_4px_16px_rgba(0,0,0,0.8)]">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl leading-[1.1] font-serif font-bold tracking-tight [text-shadow:0_4px_16px_rgba(0,0,0,0.8)]">
             Your Go-To Spot for <br className="hidden md:block" />
             <span className="mt-2 block">
               Quick and <span className="text-brand-green">Tasty Eats!</span>

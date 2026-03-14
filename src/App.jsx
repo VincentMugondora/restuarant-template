@@ -6,6 +6,7 @@ import CulinaryMasterpieces from "./components/CulinaryMasterpieces";
 import ReservationSection from "./components/ReservationSection";
 import PatronsSection from "./components/PatronsSection";
 import BlogSection from "./components/BlogSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <ReservationSection />
       <PatronsSection />
       <BlogSection />
+      <Footer />
     </div>
   );
 }

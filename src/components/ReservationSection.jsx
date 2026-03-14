@@ -12,42 +12,42 @@ export default function ReservationSection() {
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
         
         {/* Left: Reservation Form Card */}
-        <div className="bg-white rounded-xl p-8 md:p-12 shadow-2xl">
-          <h3 className="text-2xl md:text-3xl font-serif font-bold text-gray-900 mb-8 leading-tight">
+        <div className="bg-white rounded-xl p-6 md:p-8 shadow-2xl">
+          <h3 className="text-xl md:text-2xl font-serif font-bold text-gray-900 mb-6 leading-tight">
             Smooth Reservations for <br /> Memorable Dining Experiences
           </h3>
           
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold text-gray-700">Your Name*</label>
-                <input type="text" placeholder="Your full name" className="bg-gray-100 p-3 rounded-md text-sm outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
+          <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-gray-700">Your Name*</label>
+                <input type="text" placeholder="Your full name" className="bg-gray-100 px-3 py-2.5 rounded-md text-sm outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
               </div>
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold text-gray-700">Your email*</label>
-                <input type="email" placeholder="Your email" className="bg-gray-100 p-3 rounded-md text-sm outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold text-gray-700">Phone number*</label>
-                <input type="text" placeholder="Your phone number" className="bg-gray-100 p-3 rounded-md text-sm outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
-              </div>
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold text-gray-700">Reservation Date*</label>
-                <input type="date" className="bg-gray-100 p-3 rounded-md text-sm text-gray-500 outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-gray-700">Your email*</label>
+                <input type="email" placeholder="Your email" className="bg-gray-100 px-3 py-2.5 rounded-md text-sm outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold text-gray-700">Reservation Time*</label>
-                <input type="time" className="bg-gray-100 p-3 rounded-md text-sm text-gray-500 outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-gray-700">Phone number*</label>
+                <input type="text" placeholder="Your phone number" className="bg-gray-100 px-3 py-2.5 rounded-md text-sm outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
               </div>
-              <div className="flex flex-col gap-2">
-                <label className="text-sm font-bold text-gray-700">Person*</label>
-                <select className="bg-gray-100 p-3 rounded-md text-sm text-gray-500 outline-none focus:ring-2 focus:ring-brand-yellow transition-all cursor-pointer">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-gray-700">Reservation Date*</label>
+                <input type="date" className="bg-gray-100 px-3 py-2.5 rounded-md text-sm text-gray-500 outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-gray-700">Reservation Time*</label>
+                <input type="time" className="bg-gray-100 px-3 py-2.5 rounded-md text-sm text-gray-500 outline-none focus:ring-2 focus:ring-brand-yellow transition-all" />
+              </div>
+              <div className="flex flex-col gap-1.5">
+                <label className="text-xs font-bold text-gray-700">Person*</label>
+                <select className="bg-gray-100 px-3 py-2.5 rounded-md text-sm text-gray-500 outline-none focus:ring-2 focus:ring-brand-yellow transition-all cursor-pointer">
                   <option>Person-1</option>
                   <option>Person-2</option>
                   <option>Person-4+</option>
@@ -55,26 +55,26 @@ export default function ReservationSection() {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2">
-              <label className="text-sm font-bold text-gray-700">Notes*</label>
-              <textarea rows="4" className="bg-gray-100 p-3 rounded-md text-sm outline-none focus:ring-2 focus:ring-brand-yellow resize-none transition-all"></textarea>
+            <div className="flex flex-col gap-1.5">
+              <label className="text-xs font-bold text-gray-700">Notes*</label>
+              <textarea rows="3" className="bg-gray-100 px-3 py-2.5 rounded-md text-sm outline-none focus:ring-2 focus:ring-brand-yellow resize-none transition-all"></textarea>
             </div>
 
-            <button type="submit" className="w-full bg-brand-yellow text-black font-bold py-4 rounded-md hover:bg-yellow-400 transition-colors shadow-lg active:scale-[0.98]">
+            <button type="submit" className="w-full bg-brand-yellow text-black font-bold py-3 mt-2 rounded-md hover:bg-yellow-400 transition-colors shadow-lg active:scale-[0.98]">
               Request Reservation
             </button>
           </form>
         </div>
 
         {/* Right: Text Content */}
-        <div className="text-white flex flex-col items-start gap-6">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold leading-tight">
+        <div className="text-white flex flex-col items-start gap-4">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold leading-tight">
             Elevate Your Dining Experience with a Reserved Table at <br className="hidden lg:block"/> <span className="text-brand-green">Fast Food</span>
           </h2>
-          <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
+          <p className="text-gray-400 text-base leading-relaxed max-w-lg">
             Whether you're planning an intimate dinner or a grand celebration, reserving your table with us ensures priority service and an evening tailored perfectly to your tastes.
           </p>
-          <button className="bg-brand-yellow text-black font-bold px-8 py-4 rounded-md flex items-center gap-2 hover:bg-yellow-400 transition-all shadow-xl active:scale-95 mt-4">
+          <button className="bg-brand-yellow text-black font-bold px-6 py-3 rounded-md flex items-center gap-2 hover:bg-yellow-400 transition-all shadow-xl active:scale-95 mt-2">
             Read More <ArrowRight size={20} />
           </button>
         </div>

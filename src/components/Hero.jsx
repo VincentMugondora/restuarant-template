@@ -4,14 +4,14 @@ import Navbar from "./Navbar";
 
 export default function Hero() {
   return (
-    <div className="relative h-[96vh] min-h-[600px] w-full bg-[#0f0f0f] text-white overflow-hidden flex flex-col">
+    <div className="relative h-[96vh] min-h-[600px] w-full bg-[#161616] text-white overflow-hidden flex flex-col">
 
       {/* BACKGROUND LAYER */}
-      <div className="absolute inset-0 z-0 opacity-10 pointer-events-none bg-[url('/doodle_pattern.svg')] bg-[length:400px_400px] bg-repeat" />
+      <div className="absolute inset-0 z-10 opacity-30 pointer-events-none bg-[url('/doodle_pattern.svg')] bg-[length:400px_400px] bg-repeat mix-blend-screen" />
 
       <div
-        className="absolute top-0 right-0 h-full w-[60%] bg-[#161616] z-0 hidden lg:block"
-        style={{ clipPath: 'ellipse(75% 100% at 100% 50%)' }}
+        className="absolute top-0 left-0 h-full w-[85%] bg-[#0f0f0f] z-0 hidden lg:block"
+        style={{ clipPath: 'ellipse(75% 100% at 0% 50%)' }}
       />
 
       {/* NAVIGATION - Tightened padding */}
@@ -35,9 +35,9 @@ export default function Hero() {
               Quick and <span className="text-brand-green">Tasty Eats!</span>
             </h1>
 
-            <p className="text-gray-400 text-base md:text-lg max-w-[420px] mb-8 leading-relaxed">
+            <p className="text-gray-400 text-base md:text-lg max-w-[500px] mb-8 leading-relaxed">
               It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking...
+              the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.
             </p>
 
             <div className="relative inline-block">
@@ -45,24 +45,6 @@ export default function Hero() {
                 Order Now
                 <ArrowRight size={18} />
               </button>
-
-              {/* Scaled down Green Arrow */}
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
-                className="hidden lg:block absolute -right-36 -bottom-6 w-32"
-              >
-                <svg viewBox="0 0 200 100" className="w-full h-auto drop-shadow-md">
-                  <path
-                    d="M 10 20 Q 50 100 120 70 L 140 85 M 115 55 L 125 70 L 145 60"
-                    stroke="#4caf50"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                    fill="transparent"
-                  />
-                </svg>
-              </motion.div>
             </div>
           </motion.div>
 

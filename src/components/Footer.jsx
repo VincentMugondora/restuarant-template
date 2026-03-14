@@ -110,8 +110,9 @@ export default function Footer() {
         </div>
 
         {/* 3. Copyright Bar */}
-        <div className="mt-20 pt-8 border-t border-gray-800 text-center text-gray-500 text-xs">
-          © Copyright Food Lover 2024. All right reserved.
+        <div className="mt-20 pt-8 border-t border-gray-800 text-center text-gray-500 text-xs flex flex-col md:flex-row items-center justify-between gap-2">
+          <p>© Copyright Food Lover {new Date().getFullYear()}. All right reserved.</p>
+          <p>Developed by <span className="text-brand-yellow font-bold">zimnovate</span></p>
         </div>
       </div>
     </footer>

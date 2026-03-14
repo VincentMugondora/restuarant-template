@@ -30,14 +30,13 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-center lg:items-start text-center lg:text-left"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-6xl leading-[1.1] font-bold font-serif mb-4 tracking-tight">
-              Your Go-To <br /> Spot for <br />
-              Quick and <span className="text-brand-green">Tasty Eats!</span>
+            <h1 className="text-4xl md:text-5xl lg:text-5xl xl:text-5xl leading-[1.1] font-bold font-serif mb-4 tracking-tight">
+              Your Go-To Spot for Quick and <span className="text-brand-green">Tasty Eats!</span>
             </h1>
 
             <p className="text-gray-400 text-base md:text-lg max-w-[500px] mb-8 leading-relaxed">
               It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, making it look like readable English.
+              the readable content of a page when looking at its layout.
             </p>
 
             <div className="relative inline-block">
@@ -58,14 +57,10 @@ export default function Hero() {
             {/* The size here is tied to vh to prevent overflow */}
             <div className="relative w-[280px] h-[280px] md:w-[40vh] md:h-[40vh] lg:w-[65vh] lg:h-[65vh] max-w-[550px] max-h-[550px]">
               <div
-                className="w-full h-full overflow-hidden shadow-2xl border-4 border-[#1a1a1a]"
-                style={{
-                  borderRadius: '30% 70% 70% 30% / 30% 30% 70% 70%',
-                  background: '#111'
-                }}
+                className="w-full h-full overflow-visible drop-shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-transparent"
               >
                 <img
-                  src="/burger_hero.png"
+                  src="/burger-her.png"
                   alt="Burger"
                   className="w-full h-full object-cover"
                 />

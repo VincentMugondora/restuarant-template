@@ -11,19 +11,19 @@ const patrons = [
   },
   {
     name: "Stuart Mark",
-    review: "Pen arrange link background community line figma horizontal link. Follower layer content hand undo. Figma edit flows",
+    review: "The atmosphere is always electric, and the food never disappoints. The chefs here clearly care deeply about their craft, making every visit a special occasion.",
     initials: "SM",
     bgColor: "bg-green-200 text-green-800"
   },
   {
     name: "Stuart Mark",
-    review: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble...",
+    review: "Every dish is a masterpiece. From the first bite to the last, it's evident that quality and passion are the main ingredients. I'll definitely be returning!",
     initials: "SM",
     bgColor: "bg-purple-200 text-purple-800"
   },
   {
     name: "Megan Johnson",
-    review: "Pen arrange link background community line figma horizontal link. Follower layer content hand undo. Figma edit flows",
+    review: "Easily the best dining experience I've had in the city. The attention to detail, from the perfectly balanced menu to the exceptional service, sets a new standard.",
     initials: "MJ",
     bgColor: "bg-pink-200 text-pink-800"
   }

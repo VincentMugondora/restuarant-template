@@ -42,10 +42,7 @@ export default function FeaturedSection() {
           </h2>
           
           <p className="text-gray-500 text-lg leading-relaxed max-w-[550px] mx-auto lg:mx-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat.
+            Indulge in our most cherished signature dishes, crafted with passion and the finest seasonal ingredients. Every bite is designed to take you on an unforgettable journey of taste and texture.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-8 mt-4 justify-center lg:justify-start">

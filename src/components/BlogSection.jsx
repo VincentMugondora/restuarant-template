@@ -11,8 +11,8 @@ export default function BlogSection() {
           Our <span className="text-brand-green">Blog</span>
         </h2>
         <p className="text-gray-500 leading-relaxed text-sm md:text-base">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui 
-          blanditiis praesentium voluptatum deleniti atque...
+          Dive into the stories behind our kitchen, explore seasonal recipes, and stay 
+          updated with the latest culinary trends and events happening at our restaurant.
         </p>
       </div>
 
@@ -40,8 +40,8 @@ export default function BlogSection() {
               The Palate Pioneer: <br /> Navigating the World of Tastes
             </h3>
             <p className="text-gray-300 text-sm md:text-base mb-6 line-clamp-2 md:line-clamp-none">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui 
-              blanditiis praesentium voluptatum deleniti atque...
+              Join us as our head chef explores bold new flavor profiles, sourcing exotic 
+              ingredients and combining them with classic culinary techniques in our latest showcase.
             </p>
             <a href="#" className="flex items-center gap-2 text-brand-yellow font-bold hover:underline pointer-events-auto w-fit">
               Read More <ArrowRight size={18} />
@@ -74,8 +74,8 @@ export default function BlogSection() {
                 {post.title}
               </h4>
               <p className="text-gray-500 text-sm leading-relaxed">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui 
-                blanditiis praesentium voluptatum deleniti atque...
+                Discover the secrets behind crafting the perfect dining experience from scratch, 
+                straight from our expert culinary team.
               </p>
               <a href="#" className="flex items-center gap-2 text-brand-yellow font-bold hover:underline w-fit">
                 Read More <ArrowRight size={18} />

@@ -72,7 +72,7 @@ export default function ReservationSection() {
             Elevate Your Dining Experience with a Reserved Table at <br className="hidden lg:block"/> <span className="text-brand-green">Fast Food</span>
           </h2>
           <p className="text-gray-400 text-lg leading-relaxed max-w-lg">
-            On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.
+            Whether you're planning an intimate dinner or a grand celebration, reserving your table with us ensures priority service and an evening tailored perfectly to your tastes.
           </p>
           <button className="bg-brand-yellow text-black font-bold px-8 py-4 rounded-md flex items-center gap-2 hover:bg-yellow-400 transition-all shadow-xl active:scale-95 mt-4">
             Read More <ArrowRight size={20} />

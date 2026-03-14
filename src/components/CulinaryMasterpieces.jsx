@@ -23,7 +23,7 @@ export default function CulinaryMasterpieces() {
             <span className="text-brand-green">Masterpieces</span>
           </h2>
           <p className="text-gray-500 mt-4 leading-relaxed">
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque...
+            Explore a curated selection of our finest creations, where traditional recipes meet modern gastronomic flair. Taste the dedication in every exceptional plate.
           </p>
         </div>
         <button className="bg-brand-yellow text-black font-bold px-8 py-3.5 rounded-md flex items-center justify-center gap-2 hover:bg-yellow-400 transition-colors shrink-0 shadow-[0_4px_14px_rgba(255,200,0,0.3)] active:scale-95 w-full md:w-auto mt-4 md:mt-0">

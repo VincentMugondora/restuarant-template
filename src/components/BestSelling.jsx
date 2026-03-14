@@ -17,7 +17,7 @@ export default function BestSelling() {
           Best Selling <span className="text-brand-green">Items</span>
         </h2>
         <p className="text-gray-500 leading-relaxed">
-          But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+          Discover the dishes our guests can't get enough of. From towering hand-crafted burgers to crisp, refreshing sides, these are the proven crowd-pleasers that define our menu.
         </p>
       </div>
 

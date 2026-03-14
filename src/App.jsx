@@ -4,6 +4,8 @@ import FeaturedSection from "./components/FeaturedSection";
 import BestSelling from "./components/BestSelling";
 import CulinaryMasterpieces from "./components/CulinaryMasterpieces";
 import ReservationSection from "./components/ReservationSection";
+import PatronsSection from "./components/PatronsSection";
+import BlogSection from "./components/BlogSection";
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <BestSelling />
       <CulinaryMasterpieces />
       <ReservationSection />
+      <PatronsSection />
+      <BlogSection />
     </div>
   );
 }
